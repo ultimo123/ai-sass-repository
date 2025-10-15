@@ -1,12 +1,13 @@
-import { caller } from '@/trpc/server';
+import { Button } from '@/components/ui/button';
+import { requireAuth } from '@/lib/auth-utils';
 
 export default async function Home() {
-  const users = await caller.getUsers();
-  console.log(users);
+  await requireAuth();
 
   return (
     <div>
-      <h1>Hello World</h1>
+      protected server component <br />
+      <Button>Log out</Button>
     </div>
   );
 }
