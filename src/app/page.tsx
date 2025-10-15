@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import { Logout } from '@/components/logout';
 import { requireAuth } from '@/lib/auth-utils';
 
 export default async function Home() {
@@ -7,7 +7,7 @@ export default async function Home() {
   return (
     <div>
       protected server component <br />
-      <Button>Log out</Button>
+      <Logout />
     </div>
   );
 }
