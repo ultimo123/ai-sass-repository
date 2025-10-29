@@ -6,6 +6,8 @@ export const useSubscriptions = () => {
     queryKey: ["subscription"],
     queryFn: async () => {
       const { data } = await authClient.customer.state();
+      console.log(data, "datattatata");
+
       return data;
     },
   });
