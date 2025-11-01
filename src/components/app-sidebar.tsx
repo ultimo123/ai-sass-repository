@@ -156,5 +156,3 @@ export const AppSidebar = () => {
     </Sidebar>
   );
 };
-
-// 4:56:49
