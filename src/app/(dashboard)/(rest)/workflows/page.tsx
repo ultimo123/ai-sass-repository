@@ -36,5 +36,3 @@ const Page = async ({ searchParams }: Props) => {
 };
 
 export default Page;
-
-// 7:43:40
