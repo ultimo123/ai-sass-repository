@@ -50,10 +50,12 @@ export const WorkflowNode = ({
           className="max-w-[200px] text-center"
         >
           <p className="font-medium">{name}</p>
+          {description && (
+            <p className="text-sm text-muted-foreground truncate">
+              {description}
+            </p>
+          )}
         </NodeToolbar>
-      )}
-      {description && (
-        <p className="text-sm text-muted-foreground truncate">{description}</p>
       )}
     </>
   );
